@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #bbbbbb;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-bar {
+    height: 50px;
+    background-color: #8e7f7f;
+}
+
+.nav-list {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.nav-list a:hover {
+    color: black;
+}
+
+.container-1 {
+    width: 100vh;
+    height: 50vh;
+    background-color: #edeef7;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.container-1 h2{
+    padding: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.container-1 p{
+    display: flex;
+    justify-content: center;
+}
+
+.container-1 img {
+    margin: auto;
+    display: flex;
+}
+
+@keyframes jump {
+    from{
+        transform: translateX(20px);
+    }
+    to{
+        transform: translateX(-20px);
+    }
+}
